@@ -1,0 +1,8 @@
+node_modules
+debug.log
+yarn.lock
+package-lock.json
+test.js
+
+/dist
+/assets

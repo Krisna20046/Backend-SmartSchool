@@ -1,0 +1,43 @@
+{
+  "name": "sipapasi",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "author": "Krisna Gilang Prakoso <krisna.20046@mhs.unesa.ac.id>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "dev": "npx nodemon",
+    "test": "mocha ./src/tests/*.test.js --exit",
+    "remove:junk": "npx cross-env rm -rf dist debug.log index.js package-lock.json yarn.lock",
+    "remove:node_modules": "npx cross-env rm -rf ./node_modules",
+    "reset": "npx yarn remove:node_modules && yarn",
+    "build": "npx yarn remove:junk && npx ncc build ./src/index.js --no-cache --minify --transpile-only"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "canvas": "^2.10.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "helmet": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment-timezone": "^0.5.37",
+    "mysql2": "^2.3.3",
+    "sharp": "^0.31.0",
+    "socket.io": "^4.5.2",
+    "typeorm": "^0.3.9"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.34.0",
+    "basic-auth": "^2.0.1",
+    "cross-env": "^7.0.3",
+    "debug": "^4.3.4",
+    "depd": "^2.0.0",
+    "nodemon": "^2.0.19",
+    "on-finished": "^2.4.1",
+    "on-headers": "^1.0.2",
+    "yarn": "^1.22.19"
+  }
+}

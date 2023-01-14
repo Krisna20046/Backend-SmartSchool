@@ -1,0 +1,52 @@
+/**
+ * Add All Entities
+ */
+
+module.exports = [
+  require("./AbsenEkstrakurikulerEntity"),
+  require("./AbsenOsisEntity"),
+  require("./AbsenMuridEntity"),
+  require("./AbsenPegawaiEntity"),
+  require("./AnggotaOsisEntity"),
+  require("./ApkVersionEntity"),
+  require("./BarangKoperasiEntity"),
+  require("./BlogEntity"),
+  require("./BlogNewEntity"),
+  require("./BlogImageEntity"),
+  require("./DokumenEntity"),
+  require("./EkstrakurikulerEntity"),
+  require("./GuruMapelEntity"),
+  require("./HistoryPembelianEntity"),
+
+  // index
+
+  require("./InventarisEntity"),
+  require("./InventarisRuanganEntity"),
+  require("./ItemFasilitasEntity"),
+  require("./JabatanOsisEntity"),
+  require("./JabatanSekolahEntity"),
+  require("./JadwalKegiatanOsisEntity"),
+  require("./JadwalPelajaranEntity"),
+  require("./JadwalTambahanEntity"),
+  require("./KelasEntity"),
+  require("./KeuanganKeluarEntity"),
+  require("./KeuanganMasukEntity"),
+  require("./KoperasiKeuanganKeluarEntity"),
+  require("./PembelianEntity"),
+  require("./NilaiSiswaEntity"),
+  require("./NilaiSiswaKEntity"),
+  require("./PembinaEkstrakurikulerEntity"),
+  require("./PeminjamanFasilitasEntity"),
+  require("./PerpustakaanBukuEntity"),
+  require("./PerpustakaanPeminjamanEntity"),
+  require("./SekolahEntity"),
+  require("./SiswaBaruEntity"),
+  require("./SiswaKelasEntity"),
+  require("./SiswaWaliMuridEntity"),
+  require("./SppEntity"),
+  require("./TabunganKeluarSiswaEntity"),
+  require("./TabunganMasukSiswaEntity"),
+  require("./UsersEntity"),
+  require("./BlogOsisEntity"),
+  require("./BlogImageOsisEntity"),
+];
